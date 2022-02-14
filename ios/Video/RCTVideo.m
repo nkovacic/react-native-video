@@ -1684,7 +1684,7 @@ static int const RCTVideoUnset = -1;
   UIImage* image = [UIImage imageWithCGImage: cgImage];
   
   NSData* jpegImageData = UIImageJPEGRepresentation(image, 0.8);
-  NSString* jpegImageBase64 = [jpegImageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+  NSString* jpegImageBase64 = [jpegImageData base64EncodedStringWithOptions:0];
   
   resolve(jpegImageBase64);
 }
